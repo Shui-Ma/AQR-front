@@ -3,10 +3,27 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'jiangcheng';
-    src: url('./assets/fonts/jiangcheng.ttf');
+    font-family: "jiangcheng";
+    src: url("./assets/fonts/jiangcheng.ttf");
 }
 
-body{
-    font-family: 'jiangcheng';
+body {
+    font-family: "jiangcheng";
+}
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background-color: gray;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: lightgray;
 }

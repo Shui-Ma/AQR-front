@@ -11,9 +11,11 @@
             </div>
         </div>
         <div class="navbar-center flex items-center">
-            <button class="btn btn-lg btn-ghost text-2xl">关卡</button>
             <button class="btn btn-lg btn-ghost text-2xl">
-                <a href="https://www.kdocs.cn/l/cqjnLaNTfZdC">排位</a>
+                <RouterLink :to="{ name: '关卡' }"> 关卡 </RouterLink>
+            </button>
+            <button class="btn btn-lg btn-ghost text-2xl">
+                <RouterLink :to="{ name: '排位' }">排位</RouterLink>
             </button>
             <div class="dropdown dropdown-hover">
                 <div
@@ -25,21 +27,17 @@
                 </div>
                 <ul
                     tabindex="0"
-                    class="dropdown-content z-[1] menu shadow bg-slate-900 rounded-box w-28"
+                    class="dropdown-content z-[1] menu shadow bg-slate-800 rounded-box w-28"
                 >
                     <li>
-                        <a
-                            href="https://docs.qq.com/form/page/DZEpoc1RkUmVjbmt4#/fill"
-                        >
-                            铺面上传
-                        </a>
+                        <RouterLink :to="{ name: '谱面上传' }">
+                            谱面上传
+                        </RouterLink>
                     </li>
                     <li>
-                        <a
-                            href="https://docs.qq.com/form/page/DZG9RV3FDdVhwRE9l#/fill"
-                        >
+                        <RouterLink :to="{ name: '排位上传' }">
                             排位上传
-                        </a>
+                        </RouterLink>
                     </li>
                 </ul>
             </div>

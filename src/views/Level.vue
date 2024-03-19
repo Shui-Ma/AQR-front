@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center mt-4">
+    <div class="flex flex-col items-center">
         <LevelCard v-for="item in data" :level="item" />
     </div>
 </template>
@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import axios from "axios";
-import LevelCard from "../components/layout/level/LevelCard.vue";
+import LevelCard from "../components/level/LevelCard.vue";
 
 interface Level {
     id: number;
